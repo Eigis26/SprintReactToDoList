@@ -74,6 +74,18 @@ function Todo() {
         setTasks(newTasks);
       };
 
+      useEffect(() => {
+        const getTodos = JSON.parse(localStorage.getItem('todos' ))
+    
+        if(getTodos) {
+          setTasks(getTodos)
+        }
+      }, []);
+    
+      useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(tasks))
+      }, [tasks]);
+
     return (
         <div className="todo-container">
             <div className="header">Pending tasks ({tasksRemaining})</div>
