@@ -12,8 +12,15 @@ class App extends Component {
       <HashRouter>
       <Main />
       <Routes>
+        <Route index element={<Todo />} />
         <Route path='/Todo' element={<Todo />} />
         <Route path='/Section/Section' element={<Section />} />
+        <Route path="/*" element={                        
+                          <main style={{ marginTop: "5rem", textAlign: "center", color: "white"}}>
+                          <h1 style ={{fontSize: "10rem"}}>Page Not Found</h1>
+                        </main>
+                      }
+                       />
       </Routes>
       </HashRouter>
     );
