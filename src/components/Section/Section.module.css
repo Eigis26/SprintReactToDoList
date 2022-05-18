@@ -1,0 +1,40 @@
+.Section {
+    background-color: rgb(19, 60, 60);
+    margin-top: 0.5rem;
+    max-width: 40rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem;
+
+}
+.stl {
+    font-size: 1.5rem;
+    color: white;
+}
+.howMuch {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+.btn {
+    min-width: 3rem;
+    min-height: 2rem;
+    font-size: 2rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+.spn {
+    font-weight: 900;
+    font-size: 2rem;
+}
+.Header {
+    font-size: 2rem;
+    background-color: rgb(19, 60, 60);
+    color: white;
+    border-radius: 20px;
+}
+.headerContainer {
+    max-width: 40rem;
+    text-align: center;
+}
