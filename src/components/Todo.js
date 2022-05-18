@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Todo.css';
 
 
-function Task({ task, index, removeTask,}) {
+function Task({ task, index, removeTask, completeTask,}) {
     return (
         <div
             className="task"
@@ -11,6 +11,7 @@ function Task({ task, index, removeTask,}) {
             {task.title}
 
             <button style={{ background: "red" }} onClick={() => removeTask(index)}>x</button>
+            <button onClick={() => completeTask(index)}>Complete</button>
         </div>
     );
 }
@@ -58,6 +59,11 @@ function Todo() {
         setTasks(newTasks);
     };
 
+    const completeTask = index => {
+        const newTasks = [...tasks];
+        newTasks[index].completed = true;
+        setTasks(newTasks);
+    };
 
     return (
         <div className="todo-container">
@@ -69,6 +75,7 @@ function Todo() {
                     index={index}
                     key={index}
                     removeTask={removeTask}
+                    completeTask={completeTask}
                     />
                 ))}
             </div>
