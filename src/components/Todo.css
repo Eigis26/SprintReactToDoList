@@ -44,8 +44,8 @@ body{
     border: none;
     padding: 0.7em;
     }
-    .btn {
-        background: rgb(12, 124, 251);
+    .btnas {
+        background: rgb(196, 29, 29);
         border-radius: 5px;
         border: none;
         cursor: pointer;

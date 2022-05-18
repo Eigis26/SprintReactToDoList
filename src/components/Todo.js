@@ -36,7 +36,7 @@ function CreateTask({ addTask }) {
                 onChange={e => setValue(e.target.value)}
             />
             <div className="btndiv">
-            <button className="btn">Add task</button>
+            <button className="btnas">Add task</button>
             </div>
         </form>
     );
